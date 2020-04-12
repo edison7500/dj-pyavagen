@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import sys
+import uuid
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +23,7 @@ sys.path.insert(0, os.path.realpath(os.path.join(BASE_DIR, '../')))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ueu#jf_oy6)%=2ey3=#m2$i1=_5%xs18!$wb+%(zba@w$hvsij'
+SECRET_KEY = uuid.uuid4().hex
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

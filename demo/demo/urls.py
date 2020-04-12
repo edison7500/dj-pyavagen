@@ -15,6 +15,4 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 
-urlpatterns = [
-    url(r"^avatar/", include("dj_pyavagen.urls", namespace="pyavagen")),
-]
+urlpatterns = [url(r"^avatar/", include("dj_pyavagen.urls", namespace="pyavagen"))]

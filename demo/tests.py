@@ -7,7 +7,7 @@ class PyAvagenViewTestCase(TestCase):
         pass
 
     def test_avatar_generate_view(self):
-        url = reverse("pyavagen:generator", args=[300, 'Trump'])
+        url = reverse("pyavagen:generator", args=[300, "Trump"])
 
         res = self.client.get(url)
 

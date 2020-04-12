@@ -12,11 +12,7 @@ setup(
     version=dj_pyavagen.__version__,
     description="""Django Avatar gen""",
     long_description=readme,
-    packages=[
-        "dj_pyavagen",
-        "dj_pyavagen.templatetags",
-        "dj_pyavagen.urls",
-    ],
+    packages=["dj_pyavagen", "dj_pyavagen.templatetags", "dj_pyavagen.urls"],
     install_requires=install_requires,
     include_package_data=True,
     license="MIT License",

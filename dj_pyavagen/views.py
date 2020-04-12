@@ -12,11 +12,13 @@ class AvatarGenerateView(generic.View):
         _name = self.kwargs.pop("name")
         avatar = pyavagen.Avatar(
             pyavagen.CHAR_SQUARE_AVATAR,
-            size=int(_size), string=_name,
+            size=int(_size),
+            string=_name,
             squares_on_axis=10,
             rotate=10,
             font_outline=True,
-            blur_radius=4, color_list=pyavagen.COLOR_LIST_MATERIAL
+            blur_radius=4,
+            color_list=pyavagen.COLOR_LIST_MATERIAL,
         )
         f = BytesIO()
         avatar.generate().save(f, format="JPEG")
